@@ -1,0 +1,181 @@
+STORIES et TESTS
+
+documentations
+manifeste agile : http://fr.wikipedia.org/wiki/Manifeste_agile
+
+techno :
+
+Version 1
+
+En tant qu'utilisateur je crée un compte
+
+   - ouverture de la page d'accueil
+
+   - click sur "s'inscrire"
+
+   - formulaire inscription
+
+   - saisie login, mot de passe puis validation
+
+   - affichage page de bienvenue avec le nom de l’utilisateur, la date et l’heure
+
+   - réception email de confirmation
+
+
+
+En tant qu'utilisateur je me connecte:
+
+    - ouverture de la page d'accueil
+
+    - formulaire de connexion
+
+    - saisie login, mot de passe puis validation
+
+    - affichage page de bienvenue avec le nom de l’utilisateur, la date et l’heure
+
+
+En tant qu'utilisateur je peux me deconnecter:
+         - click sur bouton de déconnexion
+
+   - affichage page d’accueil de l’application
+
+
+
+Entités
+
+User_compte
+    - id
+    - nom
+    - prénom
+    - email   
+    - pwd
+    - Nickname
+
+
+Version 2
+
+En tant qu'utilisateur  j'écris un message
+    - click sur “écrire un message”
+    - affichage d’une zone de texte pour écrire le message
+    - sauvegarde automatique du message écrit en “état brouillon”
+
+En tant qu'utilisateur j'envoie un message
+    - sélectionner le message parmi les messages en état brouillon
+
+-  click sur “envoyer message”
+    - transmission du message
+    - affichage d’une alerte “Message envoyé”  
+
+En tant qu'utilisateur je reçois un message
+    - affichage d’une arlette “Nouveau Message reçu”
+    - affichage d’un bouton “lire message”
+    - Click sur bouton “lire message”
+
+- Ouverture du message
+
+En tant qu'utilisateur  je supprime un message
+    - affichage des messages
+    - sélectionner le ou les messages à supprimer
+    - click sur bouton “supprimer”
+    - affichage alerte “message supprimé”
+
+En tant qu'utilisateur je consulte l'historique des messages
+    - click sur “message brouillon”
+    - afficher une page avec la liste des messages brouillons
+
+- click sur “message reçu”
+    - afficher une page avec la liste des messages reçus
+
+- click sur “message envoyé”
+    - afficher une page avec la liste des messages envoyés
+
+Entités
+
+Message_draft
+    - id
+    - draft
+
+Message_received
+
+- id
+
+- received   
+Message_sent
+    - id
+    - sent
+
+
+Version 3
+
+
+En tant qu'utilisateur je géolocalise les messages (écris ou reçus)
+    - récupération de l’adresse ip du terminal ayant servi à l’envoi du message
+    -
+    -
+
+
+
+
+
+
+
+
+
+
+Version 4
+
+En tant qu’utilisateur je peux supprimer mon compte
+        - click sur profil
+        - ouverture page de profil
+        - click bouton “suppression compte”
+        - demande confirmation suppression
+        - validation de la suppression du compte
+
+
+En tant qu'utilisateur j'ajoute d'autres utilisateurs comme contact
+    - click bouton “Ajouter un Contact”
+    - affichage champ texte pour écrire le nom du contact à rechercher
+    - click “rechercher”
+    - affichage de la liste des personnes correspondantes au critère de recherche
+
+
+En tant qu'utilisateur je consulte les messages de mes contacts
+
+
+En tant qu'utilisateur je réponds aux messages de mes contacts
+    - sélection du message auquel le user veut répondre
+    - click sur “répondre”
+    - affichage d’une zone de texte pour écrire le message
+    - sauvegarde automatique du message écrit en “état brouillon”
+
+-  click sur “envoyer message”
+    - transmission du message
+    - affichage d’une alerte “Message envoyé”  
+
+
+
+
+Version 5
+
+En tant qu'utilisateur je peux afficher sur mon profil les messages de mes contacts
+
+
+
+
+
+
+
+______________________________________________________________________________
+
+TESTS (1er draft)
+
+   - valider qu'un compte est créé
+   - vérifier qu'un utilisateur est connecté
+   - s'assurer que tous les messages écrits par un utilisateurs sont rattachés à son compte
+   - valider qu'un message est écrit
+   - valider qu'un message est envoyé
+   - valider qu'un message est bien reçu
+   - vérifier que la géolocalisation est faite
+   - vérifier que l'historique est généré
+
+
