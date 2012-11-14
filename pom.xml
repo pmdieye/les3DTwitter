@@ -53,10 +53,16 @@
             <version>1.14</version>
         </dependency>
          <!-- Dépendences de test -->
+         <dependency>
+            <groupId>com.sun.jersey</groupId>
+            <artifactId>jersey-client</artifactId>
+            <version>1.14</version>
+            <scope>test</scope>
+        </dependency>
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
-      <version>3.8.1</version>
+      <version>4.10</version>
       <scope>test</scope>
     </dependency>
   </dependencies>
@@ -91,7 +97,7 @@
                                 <cargo.datasource.datasource.derby>
                                     cargo.datasource.driver=org.apache.derby.jdbc.EmbeddedDriver|
                                     cargo.datasource.url=jdbc:derby:derbyDB;create=true|
-                                    cargo.datasource.jndi=jdbc/DSfmin362|
+                                    cargo.datasource.jndi=jdbc/DSfmin362_PR|
                                     cargo.datasource.username=APP|
                                     cargo.datasource.password=APP
                                 </cargo.datasource.datasource.derby>
