@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <persistence>
+<<<<<<< HEAD
     <persistence-unit name="FMIN362_PR_PU">
+=======
+    <persistence-unit name="FMIN362_PU_PR">
+>>>>>>> 39cb48cb104823b96aa7f3ec0076fedc357e0774
         <jta-data-source>jdbc/DSfmin362_PR</jta-data-source>
         <properties>
             <!-- Glassfish's EclipseLink should create the database schema automatically -->
